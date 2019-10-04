@@ -1,3 +1,40 @@
+# CRUD API v NestJS frameworku z uporabo Express za routing in Mongoose za interakcijo z MongoDB bazo. Podprt je tudi OpenAPI Swagger na naslovu http://localhost:3000/api.   
+
+Iz neznanega razloga nastane na swaggerju model Date. Če se v shemi spremeni dateCreated iz tipa Date v tip string, se ta napaka odpravi
+  
+Installi:   
+$ npm install express --save  
+$ npm install mongoose  
+$ npm install --save @nestjs/swagger swagger-ui-express   
+https://nodejs.org/en/  
+https://www.mongodb.com/  
+
+
+Routi, ki jih API omogoča:
+
+[GET] /products  
+[POST] /product  
+[GET] /product/:id  
+[DELETE] /product/:id  
+[PUT] /product/:id
+
+Shema product izgleda tako:
+
+  {
+  
+    name : 'Computer 1',
+
+    price : 1200,
+
+    available: true,
+
+    dateCreated:'Mon Oct 03 2016 15:22:08 GMT+0200 (CEST)'
+
+  }
+
+
+
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>
